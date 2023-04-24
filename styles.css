@@ -32,6 +32,7 @@ a{
     min-height: 80px;
     position: sticky;
     top: 0;
+    column-gap: 10px;
 }
 .header-logo{
     align-self: center;
@@ -57,13 +58,14 @@ a{
     font-size: 18px;
 }
 .hero-section{
+    flex-wrap: wrap-reverse;
     background-color: #1f2937;
     padding: 50px 6%;
-    gap: 40px;
+    row-gap: 20px;
+    column-gap: 40px;
     align-items: center;
 }
 .hero-txt-div{
-    max-width: 40%;
     gap: 20px;
     align-items: flex-start;
 }
@@ -78,9 +80,11 @@ a{
 }
 .hero-img{
     justify-content: center;
+    flex: 2 1 0%;
 }
 .hero-img img{
     max-width: 360px;
+    min-width: 170px;
     height: auto;
     border-radius: 50%;
     box-shadow: 0 0 25px #464f5e;
@@ -98,7 +102,7 @@ a{
 /*Section-2*/
 
 .section-2, .section-4{
-    padding: 6% 6%;
+    padding: 10% 6%;
     background-color: #f9faf8;
 }
 .section-title{
@@ -160,6 +164,12 @@ a{
     justify-content: space-around;
     border-radius: 5px;
 }
+.cta-text-box{
+    flex: 2 1 0%;
+}
+.cta-btn-div{
+    align-self: center;
+}
 .cta-div a{
     text-align: right;
     max-width: 200px;
@@ -185,4 +195,30 @@ a{
     text-align: center;
     font-size: 14px;
     color: #f9faf8;
+}
+@media only screen and (max-width:380px) {
+    .header-logo h1{
+        font-size: 22px;
+    }
+    .hero-section{
+        padding-top: 25px;
+    }
+    .hero-title{
+        font-size: 28px;
+    }
+    .hero-text, .cta-text, .cta-btn{
+        font-size: 16px;
+    }
+    .section-title{
+        font-size: 28px;
+    }
+    .quotes{
+        font-size: 24px;
+    }
+    .cta-div{
+        flex-direction: column;
+    }
+    .cta-title{
+        font-size: 20px;
+    }
 }
