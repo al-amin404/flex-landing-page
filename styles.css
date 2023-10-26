@@ -27,9 +27,9 @@ a{
 }
 .header{
     background-color: #1f2937;
-    padding: 10px 6%;
+    padding: 5px 6%;
     justify-content: space-between;
-    min-height: 80px;
+    min-height: 70px;
     position: sticky;
     top: 0;
     column-gap: 10px;
@@ -196,6 +196,9 @@ a{
     font-size: 14px;
     color: #f9faf8;
 }
+.copyright a {
+    color: white;
+}
 @media only screen and (max-width:380px) {
     .header-logo h1{
         font-size: 22px;
@@ -211,6 +214,9 @@ a{
     }
     .section-title{
         font-size: 28px;
+    }
+    .quotes-div {
+        width: 80%;
     }
     .quotes{
         font-size: 24px;
